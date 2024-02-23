@@ -32,12 +32,7 @@ The outer while only runs if the given "subarrays" are not in sorted order, so i
 
 Since the rest of the code only contains constant operations such as variable assignments and comparisons we're left with:
 
-$$ T(n) =
-    \begin{cases}
-        1 & n \lt 2\\
-        \log_{2}(n) \cdot (\dfrac{n}{2}) \cdot (n-k) + \log_{2}(n) \cdot (n-k) & n \geq 2
-    \end{cases}
-$$
+$ T(n) = \log_{2}(n) \cdot (\dfrac{n}{2}) \cdot (n-k) + \log_{2}(n) \cdot (n-k)$
 
 $T(n) = \log_{2}(n) \cdot (\dfrac{n}{2} - \dfrac{nk}{2}) + n \cdot\log_{2} - k \cdot \log_{2}(n)$
 
